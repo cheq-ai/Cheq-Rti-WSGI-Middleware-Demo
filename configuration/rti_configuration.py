@@ -1,30 +1,3 @@
-# CHEQ's Real Time Interception Middleware Demo
-
-The following repository demonstrate a simple demo which utilize CHEQ's RTI solution <br> for Python WSGI application.
-
-In order to run the demo you'll need to create a couple environment variables.
-
-```code
-    CHEQ_API_KEY
-    CHEQ_TAG_HASH
-```
-Then run
-
-````bash
-$ export CHEQ_API_KEY=abcdddd-dddd3-492f-9417-66a1f22b4daa 
-$ export CHEQ_TAG_HASH=000000000000 
-````
-For Flask run
-````bash
-$ python flask_wsgi_app.py
-````
-
-And visit  `localhost:8080`
-
-**Notes:**
-The configuration file can be found at `configuration/rti_configuration.py`
-
-````python
 import os
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
@@ -81,5 +54,3 @@ options = {
     'get_channel': get_channel
 
 }
-
-````
